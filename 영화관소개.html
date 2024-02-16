@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화관 소개</title>
+    <style>
+         /*헤드부분*/
+         #header{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border-bottom: 3px solid #ffa216;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            width: calc(100% - 100px);
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #menu{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #menu_ul{
+            
+            width: calc(100% - 200px);
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #menu_ul li{
+            list-style: none;
+            
+        }
+        #logo{
+            /* width: calc(100 - 50px); */
+            width: 250px;
+            height: 35px;
+            /* margin-left: 10px; */
+        }
+        #log{
+            width: 32px;
+            height: 32px;
+
+        }
+        #logo a{
+            text-decoration: none;
+        }
+        #menu_ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        #menu_ul li a:hover{
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(255, 174, 0);
+            width: 200px;
+            height: 100px;
+            
+        }
+        /*헤드부분*/
+
+        #intro{
+            width: 40%;
+            margin-left: 30%;
+        
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="container">
+
+            <div id="logo">
+                <a href="total.html"><img src="img/logo.gif" id="logo" alt="로고"></a>
+            </div>
+
+            <div id="menu">
+                <ul id="menu_ul">
+                    <li><a href="영화관소개.html">영화관 소개</a></li>
+                    <li><a href="상영작안내.html">상영작 안내</a></li>
+                    <li><a href="요금안내.html">스낵코너</a></li>
+                    <li><a href="극장예약2.html">예약 하기</a></li>
+                </ul>
+            
+            </div>
+            
+            <div id="log">
+                <a href="#"><img src="img/로그인.PNG" alt="사용자" width="32" hegith="32"></a>
+            </div>
+     
+
+
+        </div>
+                  
+    </header>
+
+    <img src="img/intro.jpg" id="intro" alt="소개">
+    
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합페이지</title>
+    <style>
+        /*헤드부분*/
+        #header{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border-bottom: 3px solid #ffa216;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            width: calc(100% - 100px);
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #menu{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #menu_ul{
+            
+            width: calc(100% - 200px);
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #menu_ul li{
+            list-style: none;
+            
+        }
+        #logo{
+            /* width: calc(100 - 50px); */
+            width: 250px;
+            height: 35px;
+            /* margin-left: 10px; */
+        }
+        #log{
+            width: 32px;
+            height: 32px;
+
+        }
+        #logo a{
+            text-decoration: none;
+        }
+        #menu_ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        #menu_ul li a:hover{
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(255, 174, 0);
+            width: 200px;
+            height: 100px;
+            
+        }
+        /*헤드부분*/
+        #container1{
+            margin: 100px auto;
+            justify-content: center; /* 수평 중앙 정렬 */
+            align-items: center;
+            width: 1400px;
+            
+        }
+        #next{
+            width: 1400px;
+        }
+        
+        #container2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center; /* 수평 중앙 정렬 */
+            align-items: center; /* 수직 중앙 정렬 */
+            margin: 100px auto;
+            width: 100%;
+            
+        }
+        .content{
+            
+            background-color: rgb(255, 246, 235);
+            border-bottom: 2px solid #ffa216;
+            border-radius: 20px;
+            width: 600px;
+            height: 200px;
+            padding: 25px;
+            margin: 20px;
+            color: rgb(82, 82, 82);
+        }
+        h2{
+            font-size: 1.2rem;
+            color: #cf5d00;
+            font-weight: bold;
+        }
+        
+    </style>
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="container">
+
+            <div id="logo">
+                <a href="total.html"><img src="img/logo.gif" id="logo" alt="로고"></a>
+            </div>
+
+            <div id="menu">
+                <ul id="menu_ul">
+                    <li><a href="영화관소개.html">영화관 소개</a></li>
+                    <li><a href="상영작안내.html">상영작 안내</a></li>
+                    <li><a href="요금안내.html">스낵코너</a></li>
+                    <li><a href="극장예약2.html">예약 하기</a></li>
+                </ul>
+            
+            </div>
+            
+            <div id="log">
+                <a href="#"><img src="img/로그인.PNG" alt="사용자" width="32" hegith="32"></a>
+            </div>
+     
+
+
+        </div>
+                  
+    </header>
+
+    <!--상영작 롤링 하고싶음-->
+    <img src="img/특공대.jpg" id=img alt="메인배너1">
+
+    <div id="container1">
+        <h3>무대인사 · 시사회</h3>
+        <hr>
+        <img src="img/예정작.PNG" id="next" alt="예정작">
+    </div>
+
+    <div id="container1">
+        <h3>이벤트</h3>
+        <hr>
+        <img src="img/캡처.PNG" id="next" alt="예정작">
+    </div>
+
+
+
+    <div id="container2">
+      
+        <div id="intro" class="content">
+            <h2>이용 안내</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, hic doloribus animi facilis ipsum, nam iusto voluptatum aliquid alias deserunt quam quo necessitatibus assumenda expedita vero accusantium, reprehenderit quasi dolores? Magnam vero dolorum maxime laudantium.</p>
+        </div>
+
+        <div id="maner" class="content">
+            <h2>어린이 관객매너</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, hic doloribus animi facilis ipsum, nam iusto voluptatum aliquid alias deserunt quam quo necessitatibus assumenda expedita vero accusantium, reprehenderit quasi dolores? Magnam vero dolorum maxime laudantium.</p>
+        </div>
+
+        <div id="introduce" class="content">
+            <h2>알립니다</h2>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Blanditiis, hic doloribus animi facilis ipsum, nam iusto</li>
+            <li>voluptatum aliquid alias deserunt quam quo necessitatibus</li>
+        </div>
+
+        <div id="qna" class="content">
+            <h2>질문과 답변</h2>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Blanditiis, hic doloribus animi facilis ipsum, nam iusto</li>
+            <li>voluptatum aliquid alias deserunt quam quo necessitatibus</li>
+        </div>
+    </div>
+    
+</body>
+</html>
